@@ -3,7 +3,9 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import Layout from "../components/Layout";
 import Nav from "./Nav";
-
+import About from "./NavPages/About";
+import Contact from "./NavPages/Contact";
+import Home from "./NavPages/Home";
 export default function index() {
   const dynamicLink = useRouter();
   return (
@@ -20,9 +22,9 @@ export default function index() {
       <button onClick={() => dynamicLink.push("/blog/balaji")}>
         Dynamic Routing
       </button>
-      <h1>Nav</h1>
-      <Nav />
-      <h1>Home Page</h1>
+      <hr />
+      <h1>Common Navigation</h1>
+      <Home />
     </div>
   );
 }
