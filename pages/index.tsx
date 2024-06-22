@@ -25,6 +25,9 @@ export default function index() {
       <hr />
       <h1>Common Navigation</h1>
       <Home />
+
+      <hr />
+      <Link href="./checkPage">checkPage</Link>
     </div>
   );
 }
